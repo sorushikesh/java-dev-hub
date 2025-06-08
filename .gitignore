@@ -1,0 +1,111 @@
+# Java class files
+*.class
+
+# Logs
+*.log
+*.out
+*.err
+/logs
+/log/
+
+# Build directories
+/target/
+/build/
+
+# Maven
+.mvn/
+!**/src/main/**/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+/build/
+!gradle-wrapper.jar
+gradle-app.setting
+gradle-wrapper.properties
+gradlew
+gradlew.bat
+
+# IDEs
+## IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+## Eclipse
+*.launch
+.settings/
+.project
+.classpath
+
+## NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+## VS Code
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Spring Boot devtools
+.spring-boot-devtools.properties
+spring-boot-devtools.jar
+
+# Environment files
+.env
+.env.*
+
+# Database
+*.h2.db
+*.mv.db
+*.sqlite
+*.db
+*.sql
+*.bak
+*.log.db
+data/
+
+# Generated files
+*.jar
+*.war
+*.ear
+
+# Test Reports
+/test-output/
+/surefire-reports/
+/jacoco.exec
+/coverage/
+
+# Swagger generated
+swagger-ui.html
+swagger-ui/
+api-docs/
+
+# Sonar
+/.scannerwork/
+
+# Docker
+**/docker-compose.override.yml
+docker-compose.override.yml
+**/.docker/
+.dockerignore
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
