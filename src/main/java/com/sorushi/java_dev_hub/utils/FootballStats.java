@@ -2,10 +2,12 @@ package com.sorushi.java_dev_hub.utils;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import lombok.Getter;
 
 public class FootballStats {
 
-  public static final String[] topDivisionClubs = {
+  @Getter
+  protected static final String[] topDivisionClubs = {
     "Arsenal",
     "Aston Villa",
     "Bournemouth",

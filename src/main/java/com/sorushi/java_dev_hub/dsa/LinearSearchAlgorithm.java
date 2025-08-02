@@ -1,7 +1,6 @@
 package com.sorushi.java_dev_hub.dsa;
 
-import static com.sorushi.java_dev_hub.utils.FootballStats.topDivisionClubs;
-
+import com.sorushi.java_dev_hub.utils.FootballStats;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -11,9 +10,7 @@ import lombok.extern.slf4j.Slf4j;
  * The linear search algorithm, also known as sequential search, is a straightforward method for
  * finding a target element within a list or array. It operates by sequentially examining each
  * element in the collection until either the target element is found or the end of the collection
- * is reached.
- * -
- * Algorithm Steps: Initialization: Start at the first element (index 0) of the array.
+ * is reached. - Algorithm Steps: Initialization: Start at the first element (index 0) of the array.
  * Comparison: Compare the current element with the target element. Match Found: If the current
  * element matches the target element, return the index of the current element and terminate the
  * search. No Match: If the current element does not match, move to the next element in the array.
@@ -30,9 +27,10 @@ public class LinearSearchAlgorithm {
 
     String prefix = "FC";
 
-    linearSearchAlgorithm.filterClubsUsingLinearSearchAlgorithm(prefix, topDivisionClubs);
-    linearSearchAlgorithm.filterClubsWithForLoop(prefix, topDivisionClubs);
-    linearSearchAlgorithm.filterClubsWithStreams(prefix, topDivisionClubs);
+    linearSearchAlgorithm.filterClubsUsingLinearSearchAlgorithm(
+        prefix, FootballStats.getTopDivisionClubs());
+    linearSearchAlgorithm.filterClubsWithForLoop(prefix, FootballStats.getTopDivisionClubs());
+    linearSearchAlgorithm.filterClubsWithStreams(prefix, FootballStats.getTopDivisionClubs());
   }
 
   /** A method demonstrating linear search to filter clubs starting with a prefix. */
