@@ -4,25 +4,27 @@ import java.util.Arrays;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the ith customer has in the jth bank.
- Return the wealth that the richest customer has.
- A customer's wealth is the amount of money they have in all their bank accounts.
- The richest customer is the customer that has the maximum wealth.
+ * You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the ith
+ * customer has in the jth bank. Return the wealth that the richest customer has. A customer's
+ * wealth is the amount of money they have in all their bank accounts. The richest customer is the
+ * customer that has the maximum wealth.
  */
 @Slf4j
 public class LeetCode1672RichestCustomerWealth {
 
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
     LeetCode1672RichestCustomerWealth problemClass = new LeetCode1672RichestCustomerWealth();
 
     int[][] accounts = {
-        {2,8,7},
-        {7,1,3},
-        {1,9,5}
+      {2, 8, 7},
+      {7, 1, 3},
+      {1, 9, 5}
     };
 
-    log.info("The richest customer has maximum wealth : {}", problemClass.maximumWealthUsingStream(accounts));
+    log.info(
+        "The richest customer has maximum wealth : {}",
+        problemClass.maximumWealthUsingStream(accounts));
   }
 
   public int maximumWealth(int[][] accounts) {
