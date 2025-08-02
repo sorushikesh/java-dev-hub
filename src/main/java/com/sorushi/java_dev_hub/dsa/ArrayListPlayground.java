@@ -10,7 +10,7 @@ public class ArrayListPlayground {
 
   private static final Logger log = LoggerFactory.getLogger(ArrayListPlayground.class);
 
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
     // Declaration and Initialization
     List<Integer> list = new ArrayList<>();
@@ -38,11 +38,8 @@ public class ArrayListPlayground {
         .findFirst()
         .ifPresent(i -> log.info("Index position of element 90 is {}", list.indexOf(i)));
 
-
     // Filtering
-    List<Integer> filteredList = list.stream()
-        .filter(i -> i % 2 == 0)
-        .toList();
+    List<Integer> filteredList = list.stream().filter(i -> i % 2 == 0).toList();
 
     log.info("Filter array using stream : {}", filteredList);
   }
